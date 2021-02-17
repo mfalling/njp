@@ -3,7 +3,7 @@ library(dplyr)          # For tidyverse grammar
 library(tm)             # To strip stopwords
 library(textclean)      # For replace_contraction()
 library(stringr)        # For str_remove_all()
-library(tidytext)       # For unnest_tokens()
+library(tidytext)       # For stop_words() & unnest_tokens()
 library(wordcloud)      # For word clouds
 
 
