@@ -39,6 +39,7 @@ tokens_by_day <- full %>%
   mutate(date = as.POSIXct(date, format = "%B %d, %Y"))
 
 # Create records for tokens with missing date values.
+dates <- unique(tokens_by_day$date)
 missing <- tokens_by_day %>%
   distinct(word, date) %>%
   group_by(word) %>%
